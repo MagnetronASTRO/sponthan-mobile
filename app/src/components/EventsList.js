@@ -41,6 +41,7 @@ export default function EventsList() {
                     const long = location.coords.longitude;
                     const lat = location.coords.latitude;
                     const eventsResponse = await fetch(`${apiAdress}/api/events/get_nearest_events/${long},${lat}`);
+                 
                     if (!eventsResponse.ok) {
                         throw new Error("Failed to fetch categories.");
                     }

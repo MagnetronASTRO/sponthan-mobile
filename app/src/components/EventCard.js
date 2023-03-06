@@ -14,7 +14,7 @@ export default function EventCard({ event }) {
             <Card.Image
                 style={{ padding: 0 }}
                 source={{
-                uri: event.image?.image,
+                uri: `${event.image?.image}`,
                 }}
             />
             <Text h5 style={{ marginBottom: 10, textAlign: 'center', fontWeight: 'bold' }}>
